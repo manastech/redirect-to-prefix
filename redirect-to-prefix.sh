@@ -12,6 +12,6 @@ echo '' >> /etc/haproxy/haproxy.cfg
 echo 'frontend http' >> /etc/haproxy/haproxy.cfg
 echo '   bind *:80' >> /etc/haproxy/haproxy.cfg
 echo '   mode http' >> /etc/haproxy/haproxy.cfg
-echo "   redirect prefix ${TARGET_PREFIX} code 301" >> /etc/haproxy/haproxy.cfg
+echo "   redirect prefix ${TARGET_PREFIX} code 307" >> /etc/haproxy/haproxy.cfg
 echo '' >> /etc/haproxy/haproxy.cfg
 exec /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg

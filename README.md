@@ -6,4 +6,4 @@ Inspired by [instedd/redirect-to-https](https://github.com/instedd/redirect-to-h
 
 ## How to use
 
-Run the `manastech/redirect-to-prefix:0.1` image, setting the `TARGET_PREFIX` environment variable to the prefix you want to redirect (ie, `TARGET_PREFIX=https://example.com/subpath/`). The container listens in TCP port 80.
+Run the `manastech/redirect-to-prefix:0.2` image, setting the `TARGET_PREFIX` environment variable to the prefix you want to redirect (ie, `TARGET_PREFIX=https://example.com/subpath/`). The container listens in TCP port 80.
