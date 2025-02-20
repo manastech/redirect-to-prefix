@@ -15,11 +15,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     if: contains('refs/heads/main', github.ref) || startsWith(github.ref, 'refs/heads/release') || startsWith(github.ref, 'refs/heads/preview') || startsWith(github.ref, 'refs/tags/')
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Build image & push to Docker Hub
         env:
           DOCKER_REPOSITORY: manastech/redirect-to-prefix
